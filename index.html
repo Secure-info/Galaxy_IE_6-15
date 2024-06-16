@@ -157,6 +157,38 @@
         #downloadButton:hover {
             background-color: blue;
         }
+
+.app-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    padding: 15px 32px; /* Matching the padding of other buttons */
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: black; /* Make text color black */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px; /* Matching the margin of other buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: transparent; /* Remove background color */
+    width: 200px; /* Standardize button width */
+    height: 50px; /* Standardize button height */
+}
+
+.app-button img {
+    width: 24px; /* Standardize icon size */
+    height: auto;
+}
+
+/* Hover effects */
+.app-button:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.android:hover {
+    background-color: #f0f0f0; /* Light
 /* General button styles */
 .app-button {
     display: inline-flex;
@@ -165,14 +197,20 @@
     padding: 15px 32px; /* Matching the padding of other buttons */
     border: none;
     border-radius: 8px;
+    text-align: center;
+    color: black; /* Make text color black */
+    text-decoration: none;
     font-size: 16px;
     margin: 4px 2px; /* Matching the margin of other buttons */
     cursor: pointer;
+    transition: background-color 0.3s;
     background-color: transparent; /* Remove background color */
+    width: 200px; /* Standardize button width */
+    height: 50px; /* Standardize button height */
 }
 
 .app-button img {
-    width: 52px; /* Standardize icon size */
+    width: 24px; /* Standardize icon size */
     height: auto;
 }
 
@@ -195,11 +233,9 @@
 
 @media (min-width: 768px) {
     .button-container {
-        flex-direction: row;
-        justify-content: center; /* Center buttons horizontally */
+        flex-direction: column;
     }
 }
-
 
 /* Gold and Silver Prices Styles */
         .price {
@@ -224,25 +260,26 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <p class="business-name">Galaxy IE Corp</p>
-        <p>58 W 47th St</p>
-        <p>Booth #30-31 </p>
-        <p>New York, NY 10036</p>
-        <p>Call or WhatsApp: <a href="tel:2129978511">212-997-8511</a></p>
-        <p>Email: <a href="mailto:galaxyie2000@yahoo.com">galaxyie2000@yahoo.com</a></p>
-        <!-- Catalog Button -->
-                <a href="Galaxy_Catalog.pdf" class="catalog-button" id="catalogButton">View Catalog</a>
-        <!-- New button for downloading contact info -->
-        <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
+ <div class="container">
+    <p class="business-name">Galaxy IE Corp</p>
+    <p>58 W 47th St</p>
+    <p>Booth #30-31 </p>
+    <p>New York, NY 10036</p>
+    <p>Call or WhatsApp: <a href="tel:2129978511">212-997-8511</a></p>
+    <p>Email: <a href="mailto:galaxyie2000@yahoo.com">galaxyie2000@yahoo.com</a></p>
+    <!-- Catalog Button -->
+    <a href="Galaxy_Catalog.pdf" class="catalog-button" id="catalogButton">View Catalog</a>
+    <!-- New button for downloading contact info -->
+    <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
+    <!-- App Buttons -->
+    <div class="button-container">
+        <a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
+            <img src="apple-icon.svg" alt="Apple Store Icon">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
+            <img src="GetItOnGooglePlay_Badge_Web_color_English.png" alt="Android Icon">
+        </a>
     </div>
-<div class="button-container">
-    <a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
-        <img src="apple-icon.svg" alt="Apple Store Icon">
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
-        <img src="GetItOnGooglePlay_Badge_Web_color_English.png" alt="Android Icon">
-    </a>
 </div>
 
     <div class="fusion-fullwidth">
