@@ -157,7 +157,39 @@
         #downloadButton:hover {
             background-color: blue;
         }
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #007aff; /* Default to Apple color */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+}
 
+.app-button img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.app-button:hover {
+    background-color: #005bb5;
+}
+
+.android {
+    background-color: #3ddc84; /* Android color */
+}
+
+.android:hover {
+    background-color: #32a867;
+}
         /* Gold and Silver Prices Styles */
         .price {
             font-family: Arial, sans-serif; /* Arial font */
@@ -193,7 +225,14 @@
         <!-- New button for downloading contact info -->
         <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
     </div>
-
+<a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
+    <img src="apple-icon.png" alt="Apple Store Icon">
+    Apple Store
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
+    <img src="android-icon.png" alt="Android Icon">
+    Android
+</a>
     <div class="fusion-fullwidth">
         <div class="fusion-builder-row fusion-row">
             <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_2 fusion-one-half fusion-column-first 1_2">
