@@ -157,7 +157,7 @@
         #downloadButton:hover {
             background-color: blue;
         }
-  /* General button styles */
+/* General button styles */
 .app-button {
     display: inline-flex;
     align-items: center;
@@ -165,18 +165,14 @@
     padding: 15px 32px; /* Matching the padding of other buttons */
     border: none;
     border-radius: 8px;
-    text-align: center;
-    color: black; /* Make text color black */
-    text-decoration: none;
     font-size: 16px;
     margin: 4px 2px; /* Matching the margin of other buttons */
     cursor: pointer;
-    transition: background-color 0.3s;
     background-color: transparent; /* Remove background color */
 }
 
 .app-button img {
-    width: 24px; /* Standardize icon size */
+    width: 52px; /* Standardize icon size */
     height: auto;
 }
 
@@ -196,6 +192,14 @@
     align-items: center;
     gap: 20px; /* Adds space between the buttons */
 }
+
+@media (min-width: 768px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center; /* Center buttons horizontally */
+    }
+}
+
 
 /* Gold and Silver Prices Styles */
         .price {
@@ -232,14 +236,15 @@
         <!-- New button for downloading contact info -->
         <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
     </div>
-<a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
-    <img src="apple-icon.svg" alt="Apple Store Icon">
-    Apple Store
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
-    <img src="GetItOnGooglePlay_Badge_Web_color_English.png" alt="Android Icon">
-    Android
-</a>
+<div class="button-container">
+    <a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
+        <img src="apple-icon.svg" alt="Apple Store Icon">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
+        <img src="GetItOnGooglePlay_Badge_Web_color_English.png" alt="Android Icon">
+    </a>
+</div>
+
     <div class="fusion-fullwidth">
         <div class="fusion-builder-row fusion-row">
             <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_2 fusion-one-half fusion-column-first 1_2">
