@@ -157,35 +157,36 @@
         #downloadButton:hover {
             background-color: blue;
         }
-        /* General button styles */
+  /* General button styles */
 .app-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0070c9;
-    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    padding: 15px 32px; /* Matching the padding of other buttons */
+    border: none;
+    border-radius: 8px;
     text-align: center;
-    color: white;
+    color: black; /* Make text color black */
     text-decoration: none;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 4px 2px; /* Matching the margin of other buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: transparent; /* Remove background color */
 }
 
 .app-button img {
-    max-width: 100%;
+    width: 24px; /* Standardize icon size */
     height: auto;
 }
 
 /* Hover effects */
 .app-button:hover {
-    background-color: #005fa3;
-}
-
-.android {
-    background-color: #34a853;
+    background-color: #f0f0f0; /* Light gray background on hover */
 }
 
 .android:hover {
-    background-color: #2a8641;
+    background-color: #f0f0f0; /* Light gray background on hover */
 }
 
 /* Layout styles */
@@ -195,6 +196,7 @@
     align-items: center;
     gap: 20px; /* Adds space between the buttons */
 }
+
 /* Gold and Silver Prices Styles */
         .price {
             font-family: Arial, sans-serif; /* Arial font */
