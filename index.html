@@ -160,25 +160,19 @@
 
 /* General button styles */
 .app-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; /* Center content */
-    padding: 15px 32px; /* Matching the padding of other buttons */
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    margin: 4px 2px; /* Matching the margin of other buttons */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    background-color: transparent; /* Remove background color */
-    width: 40px; /* Standardize button width */
-    height: 15px; /* Standardize button height */
+ background-color: green;
+            border: none;
+            padding: 15px 32px;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
 }
 
 .app-button img {
-    width: 100%; /* Make icon fill the button */
-    height: 100%;
+    width: 300%; /* Make icon fill the button */
+    height: 300%;
     object-fit: contain; /* Maintain aspect ratio */
 }
 
@@ -191,13 +185,6 @@
     background-color: #f0f0f0; /* Light gray background on hover */
 }
 
-/* Layout styles */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Adds space between the buttons */
-}
 
 @media (min-width: 768px) {
     .button-container {
@@ -242,10 +229,10 @@
     <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
     <!-- App Buttons -->
     <div class="button-container">
-        <a href="https://play.google.com/store/apps/details?id=com.GalaxyIEE&hl=en" class="app-button">
+        <a href="https://apps.apple.com/us/app/galaxy-ie/id6502782535" class="app-button">
             <img src="apple-iconapple-icon.svg" alt="Apple Store Icon">
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.GalaxyIE" class="app-button android">
+        <a href="https://play.google.com/store/apps/details?id=com.GalaxyIEE&hl=en" class="app-button android">
             <img src="GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Android Icon">
         </a>
     </div>
