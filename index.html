@@ -157,6 +157,7 @@
         #downloadButton:hover {
             background-color: blue;
         }
+/* General button styles */
 .app-button {
     display: flex;
     align-items: center;
@@ -190,18 +191,19 @@
 .android:hover {
     background-color: #32a867;
 }
-        /* Gold and Silver Prices Styles */
-        .price {
-            font-family: Arial, sans-serif; /* Arial font */
-            font-size: 36px; /* Larger font size */
-            text-align: center; /* Center align */
-            font-weight: bold; /* Bold text */
-            padding: 10px; /* Padding around the prices */
-            border-radius: 10px; /* Rounded corners */
-            margin-bottom: 20px; /* Increased margin bottom */
-            background-color: #f5f5f5; /* Light gray background color */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-        }
+
+/* Layout styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .button-container {
+        flex-direction: row;
+    }
+}
 
         .gold-price {
             color: #FFD700; /* Gold color */
